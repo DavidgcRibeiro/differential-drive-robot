@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "peripheralsCheck",
+			"path": "../../../../esp_auto_drive/peripheralsCheck"
+		},
+		{
+			"name": "esp_proj",
+			"path": "../../../../esp_auto_drive/esp_proj"
+		},
+		{
+			"name": "peripheralsCheck",
+			"path": ".."
+		},
+		{
+			"name": "Projeto_SE",
+			"path": "../../../../../../../../Documents/PlatformIO/Projects/Projeto_SE"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,10 @@
+11:48:38 **** Incremental Build of configuration Debug for project PeripheralsCheck ****
+make -j24 all 
+arm-none-eabi-size  PeripheralsCheck.elf 
+   text	   data	    bss	    dec	    hex	filename
+  67364	    352	  19312	  87028	  153f4	PeripheralsCheck.elf
+Finished building: default.size.stdout
+ 
+
+11:48:39 Build Finished. 0 errors, 0 warnings. (took 1s.219ms)
+

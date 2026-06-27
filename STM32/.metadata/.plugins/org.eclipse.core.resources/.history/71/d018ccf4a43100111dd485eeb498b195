@@ -1,0 +1,42 @@
+/*
+ * comms.c
+ *
+ *  Created on: Apr 4, 2026
+ *      Author: dylan
+ */
+
+
+#include "comms.h"
+#include <stdlib.h>
+#include <string.h>
+
+comms_packet_t comms_packet;
+
+static uint8_t checksum()
+{
+	uint8_t sum = 0;
+	for (uint8_t i = 0; i < PACKET_DATA_SIZE; i++)
+	{
+		sum += comms_packet.data[i];
+	}
+	return sum;
+}
+
+bool isPacketValid()
+{
+	return (comms_packet.checksum == checksum());
+}
+
+void packetFromBytes(uint8_t *buff)
+{
+	memcpy((uint8_t *)&comms_packet, buff, PACKET_SIZE);
+}
+
+void buildPacket(packet_cmd cmd, uint8_t *data)
+{
+	comms_packet.sync1 = SYNC_1;
+	comms_packet.sync2 = SYNC_2;
+	comms_packet.cmd = cmd;
+	memcpy(comms_packet.data, data, PACKET_DATA_SIZE);
+	comms_packet.checksum = checksum();
+}

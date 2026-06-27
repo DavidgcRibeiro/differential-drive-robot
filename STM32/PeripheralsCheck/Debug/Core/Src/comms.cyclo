@@ -1,0 +1,4 @@
+../Core/Src/comms.c:15:16:checksum	2
+../Core/Src/comms.c:25:6:isPacketValid	1
+../Core/Src/comms.c:30:6:packetFromBytes	1
+../Core/Src/comms.c:35:6:buildPacket	1

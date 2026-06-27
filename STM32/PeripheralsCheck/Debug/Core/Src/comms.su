@@ -1,0 +1,4 @@
+../Core/Src/comms.c:15:16:checksum	24	static
+../Core/Src/comms.c:25:6:isPacketValid	24	static
+../Core/Src/comms.c:30:6:packetFromBytes	16	static
+../Core/Src/comms.c:35:6:buildPacket	24	static
